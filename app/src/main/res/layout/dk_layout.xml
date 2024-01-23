@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0C1E">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/dangky_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius"
+                android:backgroundTint="#30ffffff"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="15dp"
+                android:hint="Tên tài khoản (Username)"
+                android:padding="10dp"
+                android:textColor="#BDBDBD"
+                android:textColorHint="#BDBDBD"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/dangky_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius"
+                android:backgroundTint="#30ffffff"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="15dp"
+                android:hint="Mật khẩu tài khoản (Password)"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="#BDBDBD"
+                android:textColorHint="#BDBDBD"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/dangky_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius"
+                android:backgroundTint="#30ffffff"
+                android:drawableLeft="@drawable/baseline_local_phone_24"
+                android:drawablePadding="15dp"
+                android:hint="Số điện thoại (Phone Number)"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="#BDBDBD"
+                android:textColorHint="#BDBDBD"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/chuyen_dangnhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#30ffffff"
+                android:padding="10dp"
+                android:text="Already have account ?"
+                android:textColor="#BDBDBD"
+                android:textColorHint="#BDBDBD"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_dangky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:backgroundTint="#5429D5"
+                android:text="Đăng Ký"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

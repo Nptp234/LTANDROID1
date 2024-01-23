@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0C1E">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/dangnhap_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textSize="20dp"
+                android:textColorHint="#BDBDBD"
+                android:textColor="#BDBDBD"
+                android:background="@drawable/radius"
+                android:padding="10dp"
+                android:backgroundTint="#30ffffff"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="15dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/dangnhap_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textSize="20dp"
+                android:background="@drawable/radius"
+                android:padding="10dp"
+                android:backgroundTint="#30ffffff"
+                android:textColorHint="#BDBDBD"
+                android:textColor="#BDBDBD"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="15dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="50dp"/>
+
+            <TextView
+                android:id="@+id/forget_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forget Password ?"
+                android:textSize="15dp"
+                android:textColor="#BDBDBD"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/chuyen_dangky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not have account ?"
+                android:textSize="15dp"
+                android:textColor="#BDBDBD"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/button_dangnhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:backgroundTint="#5429D5"
+                android:text="Đăng Nhập"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
